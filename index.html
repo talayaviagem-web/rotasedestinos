@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotas e Destinos | Agência de Viagens em Luanda</title>
+  <meta name="description" content="Agência de viagens em Viana, Luanda Sul especializada em vistos, passaportes e organização de viagens. Suporte via WhatsApp.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1E3A8A',
+            secondary: '#D97706',
+            accent: '#065F46',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #D97706;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after, .active::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="#" class="flex items-center">
+      <i class="fas fa-route text-secondary text-3xl mr-2"></i>
+      <span class="text-2xl font-bold text-primary">Rotas e Destinos</span>
+    </a>
+    <nav class="hidden md:flex space-x-8">
+      <a href="#home" class="nav-link active text-primary font-medium">Início</a>
+      <a href="#services" class="nav-link text-gray-600 hover:text-primary font-medium">Serviços</a>
+      <a href="#about" class="nav-link text-gray-600 hover:text-primary font-medium">Sobre Nós</a>
+      <a href="#faq" class="nav-link text-gray-600 hover:text-primary font-medium">FAQs</a>
+      <a href="#contact" class="nav-link text-gray-600 hover:text-primary font-medium">Contato</a>
+    </nav>
+    <button id="menu-toggle" class="md:hidden text-primary text-2xl"><i class="fas fa-bars"></i></button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-2">
+    <a href="#home" class="block py-2 text-primary font-medium">Início</a>
+    <a href="#services" class="block py-2 text-gray-600">Serviços</a>
+    <a href="#about" class="block py-2 text-gray-600">Sobre Nós</a>
+    <a href="#faq" class="block py-2 text-gray-600">FAQs</a>
+    <a href="#contact" class="block py-2 text-gray-600">Contato</a>
+  </div>
+</header>
+
+<section id="home" class="hero text-white py-20 md:py-32 px-4 text-center">
+  <h1 class="text-4xl md:text-6xl font-bold mb-6">Descubra o Mundo com a Rotas e Destinos</h1>
+  <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Sua jornada começa aqui. Oferecemos serviços especializados para tornar sua viagem mais fácil e memorável.</p>
+  <div class="flex flex-col sm:flex-row justify-center gap-4">
+    <a href="#services" class="bg-secondary hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-lg">Nossos Serviços</a>
+    <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-6 rounded-lg">Fale Conosco</a>
+  </div>
+</section>
+
+<section id="services" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Nossos Serviços</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <!-- Vistos Portugal -->
+      <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md">
+        <i class="fas fa-passport text-secondary text-4xl mb-4"></i>
+        <h3 class="text-xl font-bold text-primary mb-3">Vistos para Portugal</h3>
+        <ul class="text-gray-600 space-y-2 mb-4">
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Turismo</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Negócios</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Estudo</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Trabalho</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Residência</li>
+        </ul>
+      </div>
+      <!-- Vistos Brasil -->
+      <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md">
+        <i class="fas fa-passport text-secondary text-4xl mb-4"></i>
+        <h3 class="text-xl font-bold text-primary mb-3">Vistos para Brasil</h3>
+        <ul class="text-gray-600 space-y-2 mb-4">
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Turismo</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Negócios</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Estudo</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto de Trabalho</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Visto Diplomático/Oficial</li>
+        </ul>
+      </div>
+      <!-- Passaporte -->
+      <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md">
+        <i class="fas fa-id-card text-secondary text-4xl mb-4"></i>
+        <h3 class="text-xl font-bold text-primary mb-3">Passaporte Angolano na SME</h3>
+        <ul class="text-gray-600 space-y-2 mb-4">
+          <li><i class="fas fa-check text-secondary mr-2"></i>Agendamento prioritário</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Lista completa de requisitos</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Acompanhamento até a entrega</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Sobre Nós</h2>
+    <div class="flex flex-col lg:flex-row items-center gap-8 mt-8">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Equipe" class="rounded-lg shadow-lg w-full lg:w-1/2">
+      <div class="lg:w-1/2">
+        <h3 class="text-2xl font-bold text-primary mb-2">Nossa História</h3>
+        <p class="text-gray-600 mb-4">Fundada em 2024 em Viana, Luanda Sul, a Rotas e Destinos nasceu da paixão por viagens e da vontade de ajudar angolanos a explorar o mundo com menos burocracia.</p>
+        <h4 class="text-xl font-bold text-primary mb-2">Missão</h4>
+        <p class="text-gray-600 mb-4">Facilitar o processo de viagem com serviços especializados e atendimento personalizado.</p>
+        <h4 class="text-xl font-bold text-primary mb-2">Valores</h4>
+        <ul class="text-gray-600 space-y-1">
+          <li><i class="fas fa-check text-secondary mr-2"></i>Transparência</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Comprometimento</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Eficiência</li>
+          <li><i class="fas fa-check text-secondary mr-2"></i>Atendimento Personalizado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Perguntas Frequentes</h2>
+    <div class="max-w-3xl mx-auto space-y-4">
+      <div class="bg-gray-50 rounded p-4">
+        <h3 class="font-bold text-primary">Quanto tempo leva para obter um visto?</h3>
+        <p class="text-gray-600 mt-2">De 10 a 15 dias úteis, dependendo do país e tipo de visto.</p>
+      </div>
+      <div class="bg-gray-50 rounded p-4">
+        <h3 class="font-bold text-primary">Quais documentos para renovar passaporte?</h3>
+        <p class="text-gray-600 mt-2">BI original, passaporte antigo (se houver), 2 fotos 4x5 e comprovativo de residência.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">Entre em Contato</h2>
+    <form id="contact-form" class="max-w-lg mx-auto bg-white p-6 rounded shadow space-y-4" onsubmit="sendToWhatsApp(event)">
+      <input type="text" id="name" placeholder="Nome Completo" required class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-secondary">
+      <input type="email" id="email" placeholder="Email" required class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-secondary">
+      <input type="tel" id="phone" placeholder="Telefone" required class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-secondary">
+      <select id="service" required class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-secondary">
+        <option value="">Selecione o serviço</option>
+        <option value="Visto para Portugal">Visto para Portugal</option>
+        <option value="Visto para Brasil">Visto para Brasil</option>
+        <option value="Passaporte Angolano">Passaporte Angolano</option>
+        <option value="Acompanhamento de Viagem">Acompanhamento de Viagem</option>
+        <option value="Outro">Outro</option>
+      </select>
+      <textarea id="message" placeholder="Descreva o que você precisa" required rows="4" class="w-full px-4 py-2 border rounded focus:ring-2 focus:ring-secondary"></textarea>
+      <button type="submit" class="w-full bg-secondary hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Enviar Solicitação</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4 text-center">
+    <p>&copy; 2025 Rotas e Destinos. Todos os direitos reservados.</p>
+    <p>WhatsApp: <a href="https://wa.me/244925556859" class="text-secondary underline">+244 925 556 859</a></p>
+  </div>
+</footer>
+
+<script>
+  const YOUR_WHATSAPP_NUMBER = "244938054887";
+  function sendToWhatsApp(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value;
+    const text = `📬 *Nova solicitação de serviço*\n\nNome: ${name}\nEmail: ${email}\nTelefone: ${phone}\nServiço: ${service}\nMensagem: ${message}`;
+    const url = `https://wa.me/${YOUR_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  }
+
+  document.getElementById('menu-toggle').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
+
+</body>
+</html>
